@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended:true}));
 app.get("/", (req,res)=>{
     res.render("form");
 });
-p
+
 app.post("/submit", async (req,res)=>{
     try{
         const response = await axios.post("http://backend:5000/submit",{
